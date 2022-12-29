@@ -36,7 +36,7 @@ To prevent shorting anything, I used Caplan-tape to insulate the ATTiny85-board.
 ![IMG_8565](https://user-images.githubusercontent.com/45515609/209936201-0c2c3915-3cb4-4993-bf12-870d0fa1ef59.jpeg)
 
 I programmed the ATTiny with the code above. Standard there is a 5 sec delay caused by the micronucleus bootloader.
-So the LEDs turn on after 5 sec. I removed the delay by burning a alternative bootloader onto the ATTiny85, by following these steps: https://bytelude.de/2018/04/20/wie-man-das-5-sekunden-boot-delay-beim-digispark-digistump-attiny85-entfernt/
+So the LEDs turn on after 5 sec. I removed the delay by burning a alternative bootloader onto the ATTiny85, by following these steps: 
 
 New Bootloader (you can upload new programs to the ATTiny85 by shorting pin0 to gnd):
 
@@ -54,3 +54,7 @@ chmod +x micronucleus
 ./micronucleus micronucleus-1.11-entry-jumper-pb0-upgrade.hex
 
 You now are asked to connect the ATTiny85 and the new bootloader will be installed. To program it, just short pin0 to ground while connecting it to your PC. After programming is succesful, remove the GND-P0 and the program will start without the 5 sec delay. So the lights wil turn on immediately after power on.
+
+
+### Thanks to 
+David Duffy/David_AVD and https://www.da-share.com/circuits/2-wire-led-strings/ for much of this information, and https://bytelude.de/2018/04/20/wie-man-das-5-sekunden-boot-delay-beim-digispark-digistump-attiny85-entfernt/
