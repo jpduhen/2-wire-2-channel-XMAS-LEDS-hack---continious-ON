@@ -33,4 +33,3 @@ Reprogramming the microcontroller is not an option, I replaced it with the Digis
 I programmed the ATTiny with the code above.
 And used KAPTAN-tape to prevent shorting anything when I placed the board inside the housing.
 
-![Uploading IMG_8558.jpeg…]()
