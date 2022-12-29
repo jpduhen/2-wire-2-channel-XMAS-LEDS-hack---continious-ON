@@ -1,7 +1,7 @@
-## Stop 2-wire-2-channel XMAS LEDs from random flickering after power off
+# Stop 2-wire-2-channel XMAS LEDs from random flickering after power off
 
 
-# Parts used:
+## Parts used:
 
 1 x Digispark ATTiny85 https://nl.aliexpress.com/item/1005004996090616.html
 
