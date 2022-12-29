@@ -48,7 +48,11 @@ To upload the new bootloader in mac OS/Linux open Terminal and change to the unp
 
 ```
 chmod +x micronucleus
+```
 
+and to burn the new bootloader type:
+
+```
 ./micronucleus micronucleus-1.11-entry-jumper-pb0-upgrade.hex
 ```
 
