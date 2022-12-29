@@ -35,6 +35,20 @@ To prevent shorting anything, I used Caplan-tape to insulate the ATTiny85-board.
 
 ![IMG_8565](https://user-images.githubusercontent.com/45515609/209936201-0c2c3915-3cb4-4993-bf12-870d0fa1ef59.jpeg)
 
-I programmed the ATTiny with the code above.
-And used KAPTAN-tape to prevent shorting anything when I placed the board inside the housing.
+I programmed the ATTiny with the code above. Standard there is a 5 sec delay caused by the micronucleus bootloader.
+So the LEDs turn on after 5 sec. I removed the delay by burning a alternative bootloader onto the ATTiny85, by following these steps: https://bytelude.de/2018/04/20/wie-man-das-5-sekunden-boot-delay-beim-digispark-digistump-attiny85-entfernt/
+
+New Bootloader (you can upload new programs to the ATTiny85 by shorting pin0 to gnd):
+
+https://github.com/micronucleus/micronucleus/blob/v1.11/upgrade/releases/micronucleus-1.11-entry-jumper-pb0-upgrade.hex
+
+Upload Software:
+
+https://github.com/digistump/DigistumpArduino/tree/master/tools
+
+Download the right tar.gz for your OS and copy the upgrade.hex file in the unzipped tar.gz folder.
+To upload the new bootloader in mac OS/Linux open Terminal and change to this directory:
+'chmod +x micronucleus
+
+
 
