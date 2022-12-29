@@ -48,7 +48,9 @@ https://github.com/digistump/DigistumpArduino/tree/master/tools
 
 Download the right tar.gz for your OS and copy the upgrade.hex file in the unzipped tar.gz folder.
 To upload the new bootloader in mac OS/Linux open Terminal and change to this directory:
-'chmod +x micronucleus
 
+chmod +x micronucleus
 
+./micronucleus micronucleus-1.11-entry-jumper-pb0-upgrade.hex
 
+You now are asked to connect the ATTiny85 and the new bootloader will be installed. To program it, just short pin0 to ground while connecting it to your PC. After programming is succesful, remove the GND-P0 and the program will start without the 5 sec delay. So the lights wil turn on immediately after power on.
