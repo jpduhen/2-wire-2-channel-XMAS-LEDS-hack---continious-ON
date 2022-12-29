@@ -21,12 +21,17 @@ By alternating the frequency of the voltage-switching all the different lighteff
 
 ![IMG_8548](https://user-images.githubusercontent.com/45515609/209929129-59ca7d4f-bb9b-4bb0-a428-47b8ed94e803.JPG)
 
-After opening up the powersupply, this is the bottom side of the PSU / MFC combo PCB. There’s a good amount of clearance between the mains and ELV sides. The IC on the bottom right is a small microcontroller. The voltage switching circuit is like this one (T1 = Q1):
+After opening up the power supply, this is the bottom side of the PSU / MFC combo PCB. There’s a good amount of clearance between the mains and ELV sides. The IC on the bottom right is a small microcontroller. The voltage switching circuit is like this one (T1 = Q1):
 
 ![2-wire-led-driver-300x194](https://user-images.githubusercontent.com/45515609/209936331-91063e6b-cb74-4e8e-ba67-3057bef5965c.png)
 
 It’s a discrete H-bridge employing bipolar transistors. L1 and L2 are the output to the 2-wire LED string. DRV1 and DRV2 are fed from the microcontroller. 
-Reprogramming the microcontroller is not an option, I replaced it with the Digispark ATTiny85 board:
+Reprogramming the microcontroller is not an option, I replaced it with the Digispark ATTiny85 board.
+The +31 V, -31 V and DRV1 and DRV2 connections are shown in this picture:
+
+![IMG_8554](https://user-images.githubusercontent.com/45515609/209938024-f14ec0bd-b8fb-47d4-87a9-39553bc58920.png)
+
+To prevent shorting anything, I used Caplan-tape to insulate the ATTiny85-board.
 
 ![IMG_8565](https://user-images.githubusercontent.com/45515609/209936201-0c2c3915-3cb4-4993-bf12-870d0fa1ef59.jpeg)
 
