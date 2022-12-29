@@ -23,7 +23,7 @@ By alternating the frequency of the voltage-switching all the different lighteff
 
 After opening up the powersupply, this is the bottom side of the PSU / MFC combo PCB. There’s a good amount of clearance between the mains and ELV sides. The IC on the bottom right is a small microcontroller. The voltage switching circuit is like this one (T1 = Q1):
 
-![2-wire-led-driver-300x194](https://user-images.githubusercontent.com/45515609/209933159-3594f000-d88c-4ef8-baaa-ea80479dda1e.png)
+![IMG_8565](https://user-images.githubusercontent.com/45515609/209936201-0c2c3915-3cb4-4993-bf12-870d0fa1ef59.jpeg)
 
 It’s a discrete H-bridge employing bipolar transistors. L1 and L2 are the output to the 2-wire LED string. DRV1 and DRV2 are fed from the microcontroller. 
 Reprogramming the microcontroller is not an option, I replaced it with the Digispark ATTiny85 board:
