@@ -2,13 +2,19 @@
 
 parts used:
 1 x Digispark ATTiny85
-XMAS lights set:
-- CZJUTAI powersupply, model JT-ELIFC31V6W-H6-IP44
+XMAS LEDs set:
+- CZJUTAI powersupply, model JT-ELIFC31V6W-H6-IP44 https://en.jutai.com/Product/72WxlogGSCElsclddsgndy.html
 - 2-wire-2-channel LEDstring with 1000 LEDs
+
 ![IMG_8564](https://user-images.githubusercontent.com/45515609/209928261-e8caef38-934a-46cf-b2b6-46beef2f015f.jpeg)
 
 The CZJUTAI powersupply has 8 different flicker/blink modes and the (only) one I want, steady ON mode, is selection 8. So every time I turn of the power, next time I turn the power on again I have to manually push the selection-butten 8 times (outside in het wind and rain). I wanted the LEDs to be steady-on, every tome I switched on the lights. Should be simple, right?
 
+The LEDs are 
+
+After opening up the powersupply, I removed the microcontroller from the circuitboard and replaced it with a Digispark ATTiny85 board.
+
+![IMG_8548](https://user-images.githubusercontent.com/45515609/209929129-59ca7d4f-bb9b-4bb0-a428-47b8ed94e803.JPG)
 
 
 This is my first project on GitHub. For Xmas I made a nice LED-tree with scrolling best wishes
