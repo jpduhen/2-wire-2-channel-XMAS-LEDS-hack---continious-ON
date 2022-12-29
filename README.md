@@ -5,6 +5,7 @@ parts used:
 XMAS lights set:
 - CZJUTAI powersupply, model JT-ELIFC31V6W-H6-IP44
 - 2-wire-2-channel LEDstring with 1000 LEDs
+![IMG_8564](https://user-images.githubusercontent.com/45515609/209928261-e8caef38-934a-46cf-b2b6-46beef2f015f.jpeg)
 
 The CZJUTAI powersupply has 8 different flicker/blink modes and the (only) one I want, steady ON mode, is selection 8. So every time I turn of the power, next time I turn the power on again I have to manually push the selection-butten 8 times (outside in het wind and rain). I wanted the LEDs to be steady-on, every tome I switched on the lights. Should be simple, right?
 
