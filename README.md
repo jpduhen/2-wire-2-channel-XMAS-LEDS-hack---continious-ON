@@ -38,22 +38,19 @@ To prevent shorting anything, I used Caplan-tape to insulate the ATTiny85-board.
 I programmed the ATTiny with the code above. Standard there is a 5 sec delay caused by the micronucleus bootloader.
 So the LEDs turn on after 5 sec. I removed the delay by burning a alternative bootloader onto the ATTiny85, by following these steps: 
 
-New Bootloader (you can upload new programs to the ATTiny85 by shorting pin0 to gnd):
-
+- Upload Software, download the right tar.gz for your OS:
+https://github.com/digistump/DigistumpArduino/tree/master/tools
+- unpak thetar.gz file into a folder.
+- Download the new bootloader into that unpacked folder also:
 https://github.com/micronucleus/micronucleus/blob/v1.11/upgrade/releases/micronucleus-1.11-entry-jumper-pb0-upgrade.hex
 
-Upload Software:
-
-https://github.com/digistump/DigistumpArduino/tree/master/tools
-
-Download the right tar.gz for your OS and copy the upgrade.hex file in the unzipped tar.gz folder.
-To upload the new bootloader in mac OS/Linux open Terminal and change to this directory:
+To upload the new bootloader in mac OS/Linux open Terminal and change to the unpacked folder and type:
 
 chmod +x micronucleus
 
 ./micronucleus micronucleus-1.11-entry-jumper-pb0-upgrade.hex
 
-You now are asked to connect the ATTiny85 and the new bootloader will be installed. To program it, just short pin0 to ground while connecting it to your PC. After programming is succesful, remove the GND-P0 and the program will start without the 5 sec delay. So the lights wil turn on immediately after power on.
+You now are asked to connect the ATTiny85 and the new bootloader will be installed. To be able to program it, just short pin0 to ground while connecting it to your PC. After programming is succesful, remove the GND-P0 and the program will start without the 5 sec delay. So the lights wil turn on immediately after power on.
 
 
 ### Thanks to 
