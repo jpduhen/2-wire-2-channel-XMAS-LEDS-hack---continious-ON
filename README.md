@@ -1,7 +1,9 @@
 ## Stop 2-wire-2-channel XMAS LEDs from random flickering after power off
 
 parts used:
+
 1 x Digispark ATTiny85
+
 XMAS LEDs set:
 - CZJUTAI powersupply, model JT-ELIFC31V6W-H6-IP44 https://en.jutai.com/Product/72WxlogGSCElsclddsgndy.html
 - 2-wire-2-channel LEDstring with 1000 LEDs
