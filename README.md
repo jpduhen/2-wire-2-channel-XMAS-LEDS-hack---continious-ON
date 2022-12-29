@@ -31,12 +31,12 @@ The +31 V, -31 V and DRV1 and DRV2 connections are shown in this picture:
 
 ![IMG_8554](https://user-images.githubusercontent.com/45515609/209938024-f14ec0bd-b8fb-47d4-87a9-39553bc58920.png)
 
-To prevent shorting anything, I used Caplan-tape to insulate the ATTiny85-board.
+To prevent shorting anything, I used Caplan-tape to insulate the ATTiny85-board. As you can see, I used PB1 and PB2 to drive the circuit DVR1 and DRV2 (I leave PB0 because it is used to program the ATTiny85 with the new alternative bootloader, see further down).
 
 ![IMG_8565](https://user-images.githubusercontent.com/45515609/209936201-0c2c3915-3cb4-4993-bf12-870d0fa1ef59.jpeg)
 
-I programmed the ATTiny with the code above. Standard there is a 5 sec delay caused by the micronucleus bootloader.
-So the LEDs turn on after 5 sec. I removed the delay by burning a alternative bootloader onto the ATTiny85, by following these steps: 
+I programmed the ATTiny with the code provided here. Out-of-the-box the ATTiny has a 5 sec delay before starting it's program, caused by the micronucleus bootloader waiting in programming mode.
+So if you use a standard ATTiny85 the LEDs turn on with a 5 sec delay. I removed the delay by burning a alternative bootloader onto the ATTiny85, by following these steps: 
 
 - Upload Software, download the right tar.gz for your OS:
 https://github.com/digistump/DigistumpArduino/tree/master/tools
