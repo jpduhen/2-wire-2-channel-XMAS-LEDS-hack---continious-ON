@@ -1,9 +1,14 @@
-## XMAS tree with 2 ATTiny's, a WS2812 LED strip and MAX7219 4x8x8 Matrix
+## Stop 2-wire-2-channel XMAS LEDs from random flickering after power off
 
 parts used:
-2 x Digispark ATTiny85
-WS2812 LED strip (56 LEDs)
-MAX7219 4x8x8 LED Matrix board
+1 x Digispark ATTiny85
+XMAS lights set:
+- CZJUTAI powersupply, model JT-ELIFC31V6W-H6-IP44
+- 2-wire-2-channel LEDstring with 1000 LEDs
+
+The CZJUTAI powersupply has 8 different flicker/blink modes and the (only) one I want, steady ON mode, is selection 8. So every time I turn of the power, next time I turn the power on again I have to manually push the selection-butten 8 times (outside in het wind and rain). I wanted the LEDs to be steady-on, every tome I switched on the lights. Should be simple, right?
+
+
 
 This is my first project on GitHub. For Xmas I made a nice LED-tree with scrolling best wishes
 
